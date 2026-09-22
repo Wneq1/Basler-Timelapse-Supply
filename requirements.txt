@@ -1,0 +1,16 @@
+# Instalacja: python -m pip install -r requirements.txt
+# Python: 3.14 (64-bit)
+#
+# Poza pip potrzebne sa sterowniki (instalowane osobno):
+#   - Basler pylon Software Suite (sterownik USB3 Vision)  -> kamera przez pypylon
+#       kamera musi byc przypisana do sterownika Basler, nie NI-IMAQdx
+#   - NI-VISA albo Keysight IO Libraries Suite              -> zasilacz przez pyvisa
+#
+# Numer seryjny kamery ustawiasz w basler_camera.py (SERIAL), liste kamer: python list_cameras.py
+
+pypylon==26.4.1
+pyvisa==1.16.2
+typing_extensions==4.15.0
+pillow==12.1.0
+numpy==2.4.4
+opencv-python==5.0.0.93  # podglad: continuous_camera_acquisition.py, continuous_camera_pylon.py
